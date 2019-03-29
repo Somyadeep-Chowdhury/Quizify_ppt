@@ -1,0 +1,66 @@
+<app-header></app-header>
+<div class="container">
+  <main class="log" class="row">
+    <div class="signup" class="col-6 t-center">
+      <div class="reg m-auto">
+      <p >Not An Existing User .. ?</p>
+      <form>
+        <button
+          mat-raised-button
+          class="btn1"
+          [routerLink]="['/register']"
+          color=""
+        >
+          Register
+        </button>
+      </form>
+    </div>
+    </div>
+    <div class="login col-6 t-center">
+      <mat-card class="z-depth-3 m-auto">
+        <h2>Login</h2>
+        <form [formGroup]="user" (ngSubmit)="login()">
+          <mat-form-field appearance="outline" class="id">
+            <mat-label>Username</mat-label>
+
+            <input
+              matInput
+              placeholder="Enter your username"
+              type="text"
+              class="name"
+              formControlName="name"
+              required
+              [(ngModel)]="name"
+            />
+            <mat-hint></mat-hint>
+          </mat-form-field>
+          <mat-form-field appearance="outline" class="password">
+            <mat-label>Password</mat-label>
+            <input
+              matInput
+              placeholder="Password"
+              type="password"
+              formControlName="password"
+              required
+              [(ngModel)]="password"
+            />
+            <mat-hint></mat-hint>
+          </mat-form-field>
+          <!-- <div mat-card-action > -->
+
+          <button
+            mat-raised-button
+            class="btn"
+            color=""
+            type="submit"
+            [disabled]="!user.valid"
+            (click)="login()"
+          >
+            Login
+          </button>
+        </form>
+      </mat-card>
+    </div>  
+  </main>
+</div>
+<app-footer></app-footer>

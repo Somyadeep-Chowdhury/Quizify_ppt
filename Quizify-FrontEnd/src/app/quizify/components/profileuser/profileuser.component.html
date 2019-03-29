@@ -1,0 +1,19 @@
+<app-header></app-header>
+<section
+class="laststep">
+
+<mat-card class="col1">
+<mat-card-title>
+  Personal Information</mat-card-title>
+  <!-- <img mat-card-avatar  height=220px width= 120px src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQin6eiGYjlKFrKhpf2wvAQJQ37HpqpRDQmcBPFX31q_RFZEW__gw"> -->
+  <mat-card-subtitle
+    class="step1">Name : {{ reg.name }}</mat-card-subtitle>
+  <mat-card-subtitle
+    class="step1">Email-Id : {{ reg.emailId }}</mat-card-subtitle>
+  <mat-card-subtitle
+    class="step1">Gender : {{ reg.gender }}</mat-card-subtitle> 
+<mat-card-subtitle class="step1">Topics :-{{ reg.topics }}</mat-card-subtitle>
+<mat-card-subtitle class="step1">Genre -:{{ reg.genres }}</mat-card-subtitle>
+</mat-card>
+</section>
+<app-footer></app-footer>

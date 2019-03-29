@@ -1,0 +1,147 @@
+
+//  media querry
+
+ #header{
+  z-index: 1;
+  width: 100%;
+  background-color: black !important;
+  opacity: 1;
+  position: fixed;
+  height: 10%;
+  margin-top: 0%;
+
+  }
+.logobar{
+  width:85%;
+  height: 100%;
+  float: left;
+
+}
+#logo{
+  width: 10%;
+  height: 100%;
+  float: left;
+
+}
+
+
+#logoname{
+  margin-left: 0.5%;
+  width:88%;
+  height: 100%;
+  float:left;
+  text-align: center;
+  line-height: 0.5px;
+  margin-top: 1%;
+ }
+#name{
+  color: #ccaa2b;
+  mix-blend-mode: screen; 
+  font-size: 38px;
+  font-weight: bold;
+  margin-top: 1%;
+  
+}
+#slogan {
+  color:whitesmoke;
+  font-style: italic;
+  font-family: cursive;
+  mix-blend-mode: screen; 
+  font-size: 18px;
+  margin-top: -6px;
+
+}
+.wrap
+ {
+  width:15%;
+  height:100%;
+  float: left;
+}
+
+.button{
+  background-color: black;
+  color: #ccaa2b;
+  // height: 65%;
+  // width:50%;
+  border: 2px solid #ccaa2b;
+  font-size: 20px;
+  margin-right:3%;
+  margin-top: 8%;
+  padding: 0;
+}
+.button1{
+  background-color: black;
+  color: #ccaa2b;
+   height: 65%;
+   width:90%;
+  border: 2px solid #ccaa2b;
+  font-size: 20px;
+  margin-left:3%;
+  margin-top: 8%;
+  padding: 0;
+}
+.icon{
+  height: 45%;
+  width: 45%;
+  margin-right: -55px;
+  border-radius: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .button{
+    height: 60%;
+    width:10%;
+    border: 1px solid #ccaa2b;
+    font-size:24px;
+    margin-left:20%;
+    margin-top: 10%;
+    padding: 0;
+  }
+  .wrap
+ {
+  width:25%;
+  height:100%;
+  
+}
+#logo{
+  width: 20%;
+}
+#logoname{
+  width:78%;
+ }
+ #name{
+  mix-blend-mode: screen; 
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10%;
+  
+}
+#slogan {
+  
+  font-size: 16px;
+  margin-top: 3px;
+
+}
+.logobar{
+  width:75%;
+}
+.icon{
+  height: 95%;
+  width: 95%;
+  margin-top:60p;
+  margin-right: -25px;
+  border-radius: 80px;
+}
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
+
+.mat-card-actions .mat-raised-button:first-child {
+  margin-left: 40px;
+  margin-right: 0;
+  width: 150px;
+  height: 50px;
+  font-size: 40px;
+  margin-top: 16px;
+}
+}
